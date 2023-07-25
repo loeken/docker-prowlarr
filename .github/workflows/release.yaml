@@ -5,7 +5,7 @@ on:
   schedule:
     - cron: '0 10 * * *'
 env:
-  version: develop-version-1.6.3.3608
+  version: develop-version-1.7.4.3769
 jobs:
   release:
     runs-on: ubuntu-22.04
