@@ -1,2 +1,2 @@
-FROM linuxserver/prowlarr:VERSION
+FROM linuxserver/prowlarr:develop-version-VERSION
 RUN apk upgrade
