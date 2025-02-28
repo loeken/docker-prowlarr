@@ -9,12 +9,12 @@
       "customType": "regex",
       "fileMatch": [".github/workflows/release.yaml", "Dockerfile"],
       "matchStrings": [
-        "tags:\\s*loeken/prowlarr:v(?<currentValue>\\d+\\.\\d+)"
+        "tags:\\s*loeken/prowlarr:(?<currentValue>\\d+\\.\\d+\\.\\d+\\.\\d+)"
       ],
       "datasourceTemplate": "docker",
       "packageNameTemplate": "linuxserver/prowlarr",
       "versioningTemplate": "loose",
-      "extractVersionTemplate": "v${version}"
+      "extractVersionTemplate": "${version}"
     }
   ]
 }
