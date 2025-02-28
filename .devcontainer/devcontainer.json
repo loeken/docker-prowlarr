@@ -1,0 +1,14 @@
+{
+    "name": "docker-prowlarr",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "docker-prowlarr",
+    "workspaceFolder": "/app",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "oderwat.indent-rainbow",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "prConcurrentLimit": 0,
+  "branchConcurrentLimit": 0,
+  "prHourlyLimit": 0,
+  "pinDigests": true,
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [".github/workflows/release.yml"],
+      "matchStrings": [
+        "tags:\\s*loeken/prowlarr:(?<currentValue>[\\d\\.]+)",
+        "COMMIT_TAG=(?<currentValue>[\\d\\.]+)"
+      ],
+      "datasourceTemplate": "github-releases",
+      "packageNameTemplate": "linuxserver/prowlarr",
+      "versioningTemplate": "semver"
+    }
+  ]
+}
