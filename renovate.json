@@ -7,14 +7,14 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": [".github/workflows/release.yml"],
+      "fileMatch": [".github/workflows/release.yaml", "Dockerfile"],
       "matchStrings": [
-        "tags:\\s*loeken/prowlarr:(?<currentValue>[\\d\\.]+)",
-        "COMMIT_TAG=(?<currentValue>[\\d\\.]+)"
+        "tags:\\s*loeken/nzbget:v(?<currentValue>\\d+\\.\\d+)"
       ],
-      "datasourceTemplate": "github-releases",
-      "packageNameTemplate": "linuxserver/prowlarr",
-      "versioningTemplate": "semver"
+      "datasourceTemplate": "docker",
+      "packageNameTemplate": "linuxserver/nzbget",
+      "versioningTemplate": "loose",
+      "extractVersionTemplate": "v${version}"
     }
   ]
 }
