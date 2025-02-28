@@ -9,10 +9,10 @@
       "customType": "regex",
       "fileMatch": [".github/workflows/release.yaml", "Dockerfile"],
       "matchStrings": [
-        "tags:\\s*loeken/nzbget:v(?<currentValue>\\d+\\.\\d+)"
+        "tags:\\s*loeken/prowlarr:v(?<currentValue>\\d+\\.\\d+)"
       ],
       "datasourceTemplate": "docker",
-      "packageNameTemplate": "linuxserver/nzbget",
+      "packageNameTemplate": "linuxserver/prowlarr",
       "versioningTemplate": "loose",
       "extractVersionTemplate": "v${version}"
     }
