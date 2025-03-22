@@ -12,7 +12,7 @@
         "tags:\\s*loeken/prowlarr:(?<currentValue>\\d+\\.\\d+\\.\\d+-ls\\d+)"
       ],
       "datasourceTemplate": "github-releases",
-      "packageNameTemplate": "linuxserver/docker-prowlarr",
+      "packageNameTemplate": "linuxserver/prowlarr",
       "versioningTemplate": "loose"
     }
   ]
