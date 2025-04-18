@@ -7,13 +7,16 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": [".github/workflows/release.yaml", "Dockerfile"],
-      "matchStrings": [
-        "tags:\\s*loeken/prowlarr:(?<currentValue>\\d+\\.\\d+(\\.\\d+)*-ls\\d+)"
+      "fileMatch": [
+        ".github/workflows/release.yaml",
+        "Dockerfile"
       ],
-      "datasourceTemplate": "github-releases",
+      "matchStrings": [
+        "tags:\\s*loeken/prowlarr:(?<currentValue>\\d+\\.\\d+\\.\\d+)"
+      ],
+      "datasourceTemplate": "docker",
       "packageNameTemplate": "linuxserver/prowlarr",
-      "versioningTemplate": "loose"
+      "versioningTemplate": "semver"
     }
   ]
 }
