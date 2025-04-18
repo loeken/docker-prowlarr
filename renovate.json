@@ -3,22 +3,19 @@
   "prConcurrentLimit": 0,
   "branchConcurrentLimit": 0,
   "prHourlyLimit": 0,
-  "pinDigests": true,
+  "pinDigests": false,
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": [
-        "^Dockerfile$",
-        ".github/workflows/release.yaml"
-      ],
+      "fileMatch": ["^Dockerfile$", ".github/workflows/release.yaml"],
       "matchStrings": [
         "FROM\\s+linuxserver/prowlarr:(?<currentValue>\\d+\\.\\d+\\.\\d+)",
         "tags:\\s*loeken/prowlarr:(?<currentValue>\\d+\\.\\d+\\.\\d+)"
       ],
       "datasourceTemplate": "docker",
       "packageNameTemplate": "linuxserver/prowlarr",
-      "versioningTemplate": "semver"
+      "versioningTemplate": "semver",
+      "extractVersionTemplate": "{{version | regexFind '\\\\d+\\\\.\\\\d+\\\\.\\\\d+$'}}"
     }
   ]
-  
 }
