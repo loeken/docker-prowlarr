@@ -9,7 +9,7 @@
       "customType": "regex",
       "fileMatch": [".github/workflows/release.yaml", "Dockerfile"],
       "matchStrings": [
-        "tags:\\s*loeken/prowlarr:(?<currentValue>\\d+\\.\\d+\\.\\d+-ls\\d+)"
+        "tags:\\s*loeken/prowlarr:(?<currentValue>\\d+\\.\\d+(\\.\\d+)*-ls\\d+)"
       ],
       "datasourceTemplate": "github-releases",
       "packageNameTemplate": "linuxserver/prowlarr",
