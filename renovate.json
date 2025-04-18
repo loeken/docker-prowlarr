@@ -14,7 +14,12 @@
       ],
       "datasourceTemplate": "docker",
       "packageNameTemplate": "linuxserver/prowlarr",
-      "versioningTemplate": "semver",
+      "versioningTemplate": "semver"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["linuxserver/prowlarr"],
       "allowedVersions": "^\\d+\\.\\d+\\.\\d+$"
     }
   ]
