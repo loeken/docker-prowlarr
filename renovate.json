@@ -20,7 +20,7 @@
   "packageRules": [
     {
       "matchPackageNames": ["linuxserver/prowlarr"],
-      "allowedVersions": "^\\d+\\.\\d+\\.\\d+$"
+      "excludeVersions": [ "*.*.*.*", "*-ls*" ]
     }
   ]
 }
