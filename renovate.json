@@ -15,7 +15,7 @@
       "datasourceTemplate": "docker",
       "packageNameTemplate": "linuxserver/prowlarr",
       "versioningTemplate": "semver",
-      "extractVersionTemplate": "{{version | regexFind '\\\\d+\\\\.\\\\d+\\\\.\\\\d+$'}}"
+      "allowedVersions": "^\\d+\\.\\d+\\.\\d+$"
     }
   ]
 }
