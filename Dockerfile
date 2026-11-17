@@ -1,2 +1,2 @@
-FROM linuxserver/prowlarr:1.37.0
+FROM linuxserver/prowlarr:3.0.2
 RUN apk upgrade
